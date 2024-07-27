@@ -79,15 +79,15 @@ function fnTranslate(id) {
             '1/4 Scouts',
             'Other',
             'Troops Counter',
-            'Noble Armies',
-            'Offensive Armies',
-            'Defensive Armies',
-            'Scout Armies',
-            'Other Armies',
-            'Offensive Units',
-            'Defensive Units',
-            'Other Units',
-            'Total Units',
+            'Contém Nobre',
+            'ATK',
+            'DEF',
+            'SPYS',
+            'Outros',
+            'Unidades Ofensivas',
+            'Unidades Defensivas',
+            'Outras Unidades',
+            'Total Unidades',
             'Co-ordinates',
         ],
     };
@@ -238,20 +238,20 @@ function fnCalculateTroopCount() {
 
     let totalTroops = 0;
 
-    const showPlayer = `<b>Player:</b> <a href="/game.php?screen=info_player&id=${playerId}" target="_blank" rel="noopener noreferrer">${playerName}</a><br>`;
-    const showTroopsPointRatio = `<b>Troops/Points Ratio:</b> <span id="troopsPointsRatio"></span><br>`;
+    const showPlayer = `<b>Jogador:</b> <a href="/game.php?screen=info_player&id=${playerId}" target="_blank" rel="noopener noreferrer">${playerName}</a><br>`;
+    const showTroopsPointRatio = `<b>Tropas/Pontos Razão:</b> <span id="troopsPointsRatio"></span><br>`;
 
     const serverTime = jQuery('#serverTime').text();
     const serverDate = jQuery('#serverDate').text();
 
-    const serverDateTime = `<b>Server Time:</b> ${serverTime} ${serverDate}<br><hr>`;
+    const serverDateTime = `<b>Horário Servidor:</b> ${serverTime} ${serverDate}<br><hr>`;
 
     const currentGroupValue = jQuery('#paged_view_content .vis_item > strong')
         .text()
         .trim()
         .slice(1, -1);
 
-    const currentGroup = `<b>Current Group:</b> ${currentGroupValue}<br>`;
+    const currentGroup = `<b>Grupo Atual:</b> ${currentGroupValue}<br>`;
 
     var maxGroups = 17;
     var outputSummary = {
