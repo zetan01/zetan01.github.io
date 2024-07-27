@@ -61,34 +61,34 @@ function fnExecuteScript() {
 function fnTranslate(id) {
     var translation = {
         en: [
-            'Full Train Nukes',
-            'Full Defense Trains',
-            'Other Nobles',
-            'Full Nukes',
-            '3/4 Nukes',
-            '1/2 Nukes',
-            '1/4 Nukes',
-            'Catapult Nukes',
-            'Full Defense',
-            '3/4 Defense',
-            '1/2 Defense',
-            '1/4 Defense',
-            'Full Scouts',
-            '3/4 Scouts',
-            '1/2 Scouts',
-            '1/4 Scouts',
-            'Other',
-            'Troops Counter',
-            'Noble Armies',
-            'Offensive Armies',
-            'Defensive Armies',
-            'Scout Armies',
-            'Other Armies',
-            'Offensive Units',
-            'Defensive Units',
-            'Other Units',
-            'Total Units',
-            'Co-ordinates',
+            'Full Nuke NT',
+            'Full DEF NT',
+            'Outros Nobres',
+            'Full ATK',
+            '3/4 ATK',
+            '1/2 ATK',
+            '1/4 ATK',
+            'Nuke Catapa',
+            'Full DEF',
+            '3/4 DEF',
+            '1/2 DEF',
+            '1/4 DEF',
+            'Full Spy',
+            '3/4 Spy',
+            '1/2 Spy',
+            '1/4 Spy',
+            'Outros',
+            'Contador de Tropas',
+            'Contém Nobres',
+            'Tropas Ofensivas',
+            'Tropas Defensivas',
+            'Exploradores',
+            'Outras Tropas',
+            'Unidades Ofensivas',
+            'Unidades Defensivas',
+            'Outras Unidades',
+            'Total Unidades',
+            'Coordenadas',
         ],
     };
 
@@ -239,7 +239,7 @@ function fnCalculateTroopCount() {
     let totalTroops = 0;
 
     const showPlayer = `<b>Player:</b> <a href="/game.php?screen=info_player&id=${playerId}" target="_blank" rel="noopener noreferrer">${playerName}</a><br>`;
-    const showTroopsPointRatio = `<b>Troops/Points Ratio:</b> <span id="troopsPointsRatio"></span><br>`;
+    const showTroopsPointRatio = `<b>Razão Tropa/Pontos:</b> <span id="troopsPointsRatio"></span><br>`;
 
     const serverTime = jQuery('#serverTime').text();
     const serverDate = jQuery('#serverDate').text();
@@ -251,7 +251,7 @@ function fnCalculateTroopCount() {
         .trim()
         .slice(1, -1);
 
-    const currentGroup = `<b>Current Group:</b> ${currentGroupValue}<br>`;
+    const currentGroup = `<b>Grupo Atual:</b> ${currentGroupValue}<br>`;
 
     var maxGroups = 17;
     var outputSummary = {
