@@ -61,8 +61,8 @@ function fnExecuteScript() {
 function fnTranslate(id) {
     var translation = {
         en: [
-            'Full Train Nukes',
-            'Full Defense Trains',
+            'Full Nuke Train',
+            'Full Defesa Train',
             'Outros Nobres',
             'Full Nukes',
             '3/4 Nukes',
