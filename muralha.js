@@ -580,7 +580,7 @@ function calculateUnitsToSend(wall) {
     if (wallToUnitAmounts[wall] !== undefined) {
         return wallToUnitAmounts[wall];
     } else {
-        return `&axe=60&ram=4&spy=1`;
+        return `&axe=120&ram=14&spy=1`;
     }
 }
 
