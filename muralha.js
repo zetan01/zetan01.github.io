@@ -566,9 +566,9 @@ function getFABarbarians(rows) {
 // Helper: Calculate units to send based on wall level
 function calculateUnitsToSend(wall) {
     let wallToUnitAmounts = {
-        1: '&axe=60&ram=4&spy=1',
-        2: '&axe=60&ram=7&spy=1',
-        3: '&axe=60&ram=10&spy=1',
+        1: '&axe=120&ram=14&spy=1',
+        2: '&axe=120&ram=14&spy=1',
+        3: '&axe=120&ram=14&spy=1',
         4: '&axe=150&ram=15&spy=1',
         5: '&axe=150&ram=20&spy=1',
         6: '&axe=150&ram=25&spy=1',
