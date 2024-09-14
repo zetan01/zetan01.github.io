@@ -1,4 +1,4 @@
-javascript:function addLoader() {
+function addLoader() {
 var widget = document.createElement('div');
 widget.id = 'loaders';
 widget.style.position = 'fixed';
