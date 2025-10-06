@@ -283,15 +283,14 @@ function fnCalculateTroopCount() {
         'Full Nuke': {
             group: 'Offensive',
             criteria: [
-		{ unit: 'snob', maxpop: 100 },
-                { unit: 'offense', minpop: 20000 },
+		                { unit: 'offense', minpop: 20000 },
             ],
             descID: 3,
         },
         'Semi Nuke': {
             group: 'Offensive',
             criteria: [
-		{ unit: 'snob', maxpop: 100 },
+
                 { unit: 'offense', minpop: 15000, maxpop: 20000 },
             ],
             descID: 4,
@@ -299,7 +298,7 @@ function fnCalculateTroopCount() {
         'Half Nuke': {
             group: 'Offensive',
             criteria: [
-		{ unit: 'snob', maxpop: 100 },
+
                 { unit: 'offense', minpop: 10000, maxpop: 15000 },
             ],
             descID: 5,
@@ -307,7 +306,7 @@ function fnCalculateTroopCount() {
         'Quarter Nuke': {
             group: 'Offensive',
             criteria: [
-		{ unit: 'snob', maxpop: 100 },
+
                 { unit: 'offense', minpop: 5000, maxpop: 10000 },
             ],
             descID: 6,
@@ -315,7 +314,7 @@ function fnCalculateTroopCount() {
         'Cat Nuke': {
             group: 'Offensive',
             criteria: [
-                { unit: 'snob', maxpop: 100 },
+
                 { unit: 'catapult', minpop: 800 },
                 { unit: 'offense', minpop: 20000 },
             ],
@@ -864,3 +863,4 @@ function preparePopupContent(popupBody, maxWidth) {
         fnExecuteScript();
     }
 })();
+
